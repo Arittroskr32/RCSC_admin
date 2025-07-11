@@ -1,0 +1,99 @@
+/* General styling */
+.member-display-container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #080615C9;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 8vh;
+}
+
+.member-display-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-display-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.member-display-container label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.member-display-container input, select {
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #0E0A29C9;
+  color: white;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.delete-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+/* Media Query for screens under 500px */
+@media (max-width: 500px) {
+  .member-display-container {
+    width: 90%; /* Reduce width for smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 18px; /* Make the header smaller */
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 12px; /* Reduce label font size */
+  }
+
+  input, select {
+    padding: 10px; /* Increase padding for easier touch interaction */
+    font-size: 16px; /* Increase input font size for better readability */
+  }
+
+  button {
+    font-size: 18px; /* Increase button font size */
+    padding: 12px; /* Increase button padding for easier click interaction */
+  }
+}

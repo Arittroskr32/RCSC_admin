@@ -1,0 +1,259 @@
+/* Container for the About section */
+.about-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #0E0A292E;
+    border-radius: 8px;
+  }
+  
+  /* Heading */
+  .about-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white;
+    margin-top: 4vh;
+  }
+  
+  /* Achievements list wrapper */
+  .about-container .achievement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  /* Individual achievement item */
+  .about-container .achievement-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #110D28D4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px; /* Adds space between achievements */
+  }
+  
+  /* Hover effect for achievement items */
+  .about-container .achievement-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  /* Left side: Achievement title and description */
+  .about-container .achievement-info {
+    flex: 1;
+    color: white;
+  }
+  
+  /* Achievement title */
+  .about-container .achievement-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Achievement description */
+  .about-container .achievement-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: white;
+    max-width: 85%; /* Ensure text stays within bounds */
+  }
+  
+  /* Show More / Show Less button */
+  .about-container .show-more-button {
+    font-size: 0.875rem;
+    color: #007BFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-container .show-more-button:hover {
+    color: #0056b3;
+  }
+  
+  /* Right side: Edit icon */
+  .about-container .edit-icon {
+    font-size: 1.5rem; /* Make the icon big enough */
+    color: #007bff; /* Set initial icon color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-left: 15px; 
+  }
+  
+  /* Edit icon hover effect */
+  .about-container .edit-icon:hover {
+    color: #0f72db; /* Change color on hover */
+  }
+  
+  /* Focus style for edit icon */
+  .about-container .edit-icon:focus {
+    outline: none;
+  }
+  
+  /* Developer Team Section */
+  .about-container .developer-team-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.about-container .developer-team-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #110D28D4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+  
+  .about-container .developer-team-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  /* Developer team information section */
+  .about-container .developer-team-item .developer-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Image styling */
+  .about-container .developer-team-item .developer-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px; /* Space between image and name */
+    object-fit: cover;
+  }
+  
+  /* Developer name in first row */
+  .about-container .developer-team-item .developer-info h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Roll number in second row */
+  .about-container .developer-team-item .developer-info .roll-number {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+  }
+  
+  /* Department in third row */
+  .about-container .developer-team-item .developer-info .department {
+    font-size: 1rem;
+    color: white;
+    margin: 5px 0;
+  }
+
+  .about-container .developer-team-item .developer-info{
+    color: white;
+  }
+
+  .about-container .developer-team-item .developer-info h3{
+    color: white;
+  }
+  
+  /* Styling the Edit icon for developer team */
+  .about-container .developer-team-item .edit-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .about-container .developer-team-item .edit-icon:hover {
+    color: #0f72db;
+  }
+  
+  .about-container .developer-team-item .edit-icon:focus {
+    outline: none;
+  }
+  
+  /* Button focus outline removal */
+  .about-container button:focus {
+    outline: none;
+  }
+
+  @media(max-width: 500px) {
+    /* Achievements section styling */
+    .about-container .achievement-list .achievement-item {
+      flex-direction: column-reverse;
+      padding-left: 20px;
+    }
+    
+    /* Edit icon alignment in achievements */
+    .about-container .achievement-list .achievement-item .edit-div {
+      display: flex;
+      width: 100%;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    
+    /* Developer Team section styling */
+    .about-container .developer-team-list {
+      grid-template-columns: 1fr; /* Single column for small screens */
+    }
+    
+    .about-container .developer-team-item {
+      padding: 15px;
+    }
+
+    .about-container .achievement-info p {
+      max-width: 100%;
+      font-size: 0.8rem;
+    }
+    
+    /* Developer information styling */
+    .about-container .developer-team-item .developer-info {
+      align-items: center;
+    }
+    
+    .about-container .developer-team-item .developer-info img {
+      width: 60px; /* Smaller image size */
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    
+    .about-container .developer-team-item .developer-info h3 {
+      font-size: 1.1rem; /* Adjust font size for smaller screens */
+    }
+    
+    .about-container .developer-team-item .developer-info .roll-number,
+    .about-container .developer-team-item .developer-info .department {
+      font-size: 0.9rem; /* Smaller font for details */
+    }
+    
+    /* Edit icon adjustment for smaller screens */
+    .about-container .developer-team-item .edit-icon,.about-container .achievement-list .edit-icon {
+      font-size: 1rem;
+    }
+    
+    /* Achievements show more button adjustments */
+    .about-container .show-more-button {
+      font-size: 0.75rem;
+    }
+    
+    /* Remove padding for buttons */
+    .about-container .create-buttons button {
+      padding: 8px 12px;
+    }
+}
+  

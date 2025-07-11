@@ -1,0 +1,122 @@
+.edit-blog {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0E0A29C9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-blog h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.edit-blog form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-blog label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.edit-blog input, 
+.edit-blog textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.edit-blog textarea {
+  height: 200px;
+}
+
+.edit-blog input, textarea {
+  background-color: #080615C9;
+  color: white;
+}
+
+.edit-blog .button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.edit-blog button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.edit-blog button:hover {
+  background-color: #0056b3;
+}
+
+.edit-blog .delete-btn {
+  background-color: #f44336;
+}
+
+.edit-blog .delete-btn:hover {
+  background-color: #e53935;
+}
+
+.edit-blog .create-btn {
+  background-color: #4CAF50;
+}
+
+.edit-blog .create-btn:hover {
+  background-color: #45a049;
+}
+
+.edit-blog p {
+  font-size: 1rem;
+  color: #888;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .edit-blog {
+    width: 90%; 
+    padding: 15px; 
+  }
+
+  .edit-blog h2 {
+    font-size: 1.5rem; 
+  }
+
+  .edit-blog form {
+    gap: 10px; 
+  }
+
+  .edit-blog input, 
+  .edit-blog textarea {
+    font-size: 0.9rem; 
+    padding: 8px;
+  }
+
+  .edit-blog button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .edit-blog label {
+    font-size: 0.9rem; 
+  }
+}

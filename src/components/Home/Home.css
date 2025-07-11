@@ -1,0 +1,285 @@
+/* General Styles for Home Page */
+.home-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 20px; /* Adjusted padding */
+    font-size: 1.2rem; /* Slightly reduced font size */
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Announcement Section */
+.announcement-section {
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+    width: 80%;
+}
+
+.announcement-section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.announcement-list {
+    display: flex;
+    flex-direction: column; /* Stack announcements vertically */
+    gap: 20px;
+}
+
+.announcement-box {
+    background-color: #080615C9;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.announcement-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.announcement-content p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.announcement-content a {
+    color: rgb(215, 16, 16);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.announcement-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.edit-icon {
+    color: #3498db;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.edit-icon:hover {
+    color: #2980b9;
+}
+
+.read-more-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin-left: 16px;
+}
+
+.read-more-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Sponsor Section */
+.sponsor-section {
+    margin-bottom: 10vh;
+}
+
+.sponsor-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.create-btn {
+    margin-top: 10px;
+}
+
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sponsors per row */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sponsor-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sponsor-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor-content img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.sponsor-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.sponsor-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.sponsor-footer .edit-icon {
+    color: #3498db;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.sponsor-footer .edit-icon:hover {
+    color: #2980b9;
+}
+
+.mailer-section {
+  margin-top: 40px;
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.mailer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mailer-input,
+.mailer-textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #111827;
+  color: #fff;
+}
+
+.mailer-input::placeholder,
+.mailer-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.mail-status {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.mail-status.success {
+  color: #10b981;
+}
+
+.mail-status.error {
+  color: #ef4444;
+}
+
+.navigation-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation-buttons .create-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navigation-buttons .create-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .announcement-list, .sponsor-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcement-box, .sponsor-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .sponsor-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 sponsors per row on tablet */
+    }
+}
+
+@media (max-width: 500px) {
+    .home-container{
+        padding: 0;
+    }
+    .home-container .announcement-section{
+        width: 100%;
+    }
+    .announcement-section h2, .sponsor-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .announcement-box, .sponsor-box {
+        padding: 10px;
+        width: 94%;
+        margin: auto;
+    }
+
+    .sponsor-list {
+        grid-template-columns: 1fr; /* 1 sponsor per row on mobile */
+    }
+
+    .create-btn {
+        font-size: 1rem; /* Smaller button font size on mobile */
+        padding: 10px 15px; /* Adjusted padding */
+    }
+}

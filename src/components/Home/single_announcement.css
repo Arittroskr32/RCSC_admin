@@ -1,0 +1,99 @@
+/* Base styles for the form */
+.announcement {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    padding: 20px;
+    background-color: #0E0A29B0;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.announcement  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+  
+.announcement form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.announcement  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+  
+.announcement input[type="text"], textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #0E0A2912;
+    color: white;
+}
+  
+.announcement textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+  
+.announcement button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+  
+.announcement button:hover {
+    background-color: #45a049;
+}
+  
+.announcement .delete-btn {
+    background-color: #f44336;
+}
+  
+.announcement .delete-btn:hover {
+    background-color: #e53935;
+}
+  
+  /* Styles for small screens */
+@media (max-width: 500px) {
+    .announcement {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .announcement h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    .announcement label {
+      font-size: 12px;
+    }
+  
+    .announcement input[type="text"], textarea {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .announcement button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  
+    .announcement .delete-btn {
+      font-size: 14px;
+    }
+}
+  
